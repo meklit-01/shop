@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shop House</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./image/Fast Shopping Cart Logo.png" alt="logo">
+    <button onclick="goToWishlist()" class="wish-button">Wishlist</button>
+    </header>
+
+    <main>
+      <form id="searchForm" class="form-section">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search for a Product..."/>
+     
+        
+
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="message"></p>
+      <section class="wishandProduct">
+        <section>
+        <h2 id="title">Products</h2> 
+
+        <div id="products" class="grid productList"></div>
+      </section>
+
+      <section>
+        <h2>Wish Lists</h2>
+
+        <div id="wish-list" class="grid"></div>
+      </section>
+      </section>
+
+      
+    </main>
+<footer class="footer">
+
+    <div class="footer-container">
+
+       
+        <div class="footer-section">
+            
+            <p>
+                Your one-stop online shopping destination.
+                Discover quality products at great prices.
+            </p>
+        </div>
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">Shipping Information</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>📍 Addis Ababa, Ethiopia</p>
+            <p>📞 +251 900 000 000</p>
+            <p>✉️ support@shopease.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+        </div>
+    </div>
+
+</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

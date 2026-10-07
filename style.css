@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color: brown;
+  margin: 10px;
+  border-radius: 30px;
+}
+header img{
+  width: 100px;
+  margin-left: 20px;
+}
+.wish-button{
+    border: none;
+    background-color: rgb(222, 124, 32);
+  
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+button{
+  background-color:  rgb(222, 124, 32);
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+.form-section{
+    background-color:white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main {
+  padding: 30px;
+  color: rgb(255, 255, 255);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color:white;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+section {
+  margin-top: 20px;
+}
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #a69e8f;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+.card:hover{
+   transform: scale(1.05);
+}
+
+.footer {
+  
+    color: white;
+    margin-top: 80px;
+    padding: 60px 8% 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+   
+    gap: 50px;
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #d1d5db;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+
+    padding-top: 25px;
+    border-top: 1px solid #4b5563;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: white;
+}
+@media (min-width: 560px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-container {
+         grid-template-columns: 2fr 1fr  1.5fr;
+    }
+}
+
+@media (min-width: 780px) { 
+
+  .wishandProduct{
+    display: flex;
+    gap: 50px;
+  }
+  #wish-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 280px;
+  }
+  .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
