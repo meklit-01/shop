@@ -26,7 +26,6 @@ header img{
 .wish-button{
     border: none;
     background-color: rgb(222, 124, 32);
-  
     padding: 10px 16px;
     border-radius: 10px;
     margin-right: 20px;
@@ -44,10 +43,13 @@ header h1 {
     border-radius: 10px;
     padding: 10px;
 }
+h2{
+  border-radius: 1px solid  rgb(227, 224, 224);
+}
 
 main {
   padding: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(109, 105, 105);
 }
 
 form {
@@ -114,7 +116,6 @@ section h2 {
 }
 
 .footer {
-  
     color: white;
     margin-top: 80px;
     padding: 60px 8% 20px;
@@ -124,7 +125,6 @@ section h2 {
     max-width: 1200px;
     margin: auto;
     display: grid;
-   
     gap: 50px;
     .footer-container {
         grid-template-columns: 1fr;
@@ -189,6 +189,10 @@ section h2 {
 .social-links a:hover {
     color: white;
 }
+
+#wishlist-section {
+    display: none;
+}
 @media (min-width: 560px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -208,6 +212,7 @@ section h2 {
   display: grid;
   grid-template-columns: 1fr;
   width: 280px;
+  
   }
   .footer-container {
         grid-template-columns: 1fr 1fr;

@@ -84,6 +84,17 @@ function render() {
     wishEl.innerHTML = state.wishList
         .map((product) => createCard(product))
         .join("");
+    
+    // show wishlist only when it has products
+    
+    const wishlistSection = document.getElementById("wish-section");
+
+    if(state.wishList.length > 0){
+        wishlistSection.style.display = "block";
+
+    }else{
+        wishlistSection.style.display = "none";
+    }
 }
 
 
