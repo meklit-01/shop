@@ -77,6 +77,16 @@ function render() {
         product.title.toLowerCase().includes(title)
     );
 
+// show massage if no product is found
+
+    if(filteredProducts.length === 0){
+        messageEl.innerHTML = "Product not found.";
+    }else{
+        messageEl.innerHTML = "";
+    }
+
+
+
     productEl.innerHTML = filteredProducts
         .map((product) => createCard(product))
         .join("");

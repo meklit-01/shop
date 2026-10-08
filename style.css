@@ -73,6 +73,9 @@ button {
   cursor: pointer;
 }
 
+#message{
+  margin-top: 15px;
+}
 section {
   margin-top: 20px;
 }
