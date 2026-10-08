@@ -162,6 +162,15 @@ section h2 {
     color: white;
     padding-left: 5px;
 }
+.footer-section img{
+   width: 15px;
+   height: 14px;
+}
+.Contants{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
 
 .footer-bottom {
     max-width: 1200px;
@@ -182,15 +191,15 @@ section h2 {
 .social-links {
     display: flex;
     gap: 20px;
+   
 }
 
-.social-links a {
-    color: #d1d5db;
-    text-decoration: none;
+.social-links img{
+  width: 30px;
+  transition: transform 0.3 ease;
 }
-
-.social-links a:hover {
-    color: white;
+.social-links img:hover{
+  transform: scale(1.05);
 }
 
 #wishlist-section {
